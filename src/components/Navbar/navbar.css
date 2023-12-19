@@ -1,0 +1,23 @@
+.triangle-container {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    background-color: #e3f1fe;
+    overflow: hidden;
+  }
+  
+  .triangle-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .triangle-container::before {
+    left: 0;
+    border-width: 0 0 140px 145px;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  
