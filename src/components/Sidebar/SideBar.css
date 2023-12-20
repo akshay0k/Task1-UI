@@ -1,0 +1,127 @@
+.sidebar-container {
+    background-color: white;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(221, 221, 221);
+    z-index: 1;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgb(221, 221, 221);
+    padding: 20px;
+  }
+  
+  .profile img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .profile-name-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-name {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .profile-mail {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  
+  .side-menu-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+  
+  .side-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .side-menu:hover {
+    background-color: #e3f1fe;
+  }
+  
+  .menu-icons {
+    color: #2db6ec;
+    font-size: 18px;
+  }
+  
+  .side-menu.selected {
+    background-color: #b1e7ff;
+    box-shadow: 0px 0px 5px rgb(221, 221, 221);
+  }
+  
+  .logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    margin-top: auto;
+    color: #3186ca;
+    background-color: #f9fdff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout:hover {
+    background-color: #e3f1fe;
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar-container {
+      width: max-content;
+    }
+    .side-menu-title {
+      display: none;
+    }
+    .profile-content {
+      gap: 10px;
+    }
+    .profile img {
+      width: 40px;
+      height: 40px;
+    }
+    .profile-name {
+      font-size: 10px;
+      text-align: center;
+    }
+    .profile-mail {
+      display: none;
+    }
+  }
+  

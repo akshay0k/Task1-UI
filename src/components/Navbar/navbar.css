@@ -1,23 +1,63 @@
-.triangle-container {
-    position: relative;
-    width: 200px;
-    height: 120px;
-    background-color: #e3f1fe;
-    overflow: hidden;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle {
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  margin-left: -2px;
+}
+
+.logo-container img {
+  background-color: #ffffff;
+  width: 153px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-companyname {
+  display: flex;
+  width: max-content;
+  height: 30px;
+  align-items: center;
+  gap: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(221, 221, 221);
+  padding: 5px;
+}
+
+.logo-companyname img {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.arrow-btn {
+  background-color: #ffffff;
+
+  padding: 2px 4px;
+  border-radius: 7px;
+}
+
+@media (max-width: 480px) {
+  .logo-container img {
+    width: 100px;
   }
-  
-  .triangle-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  
-  .triangle-container::before {
-    left: 0;
-    border-width: 0 0 140px 145px;
-    border-color: transparent transparent transparent #ffffff;
-  }
-  
+}
