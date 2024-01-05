@@ -56,6 +56,14 @@
   border-radius: 7px;
 }
 
+@media (max-width: 800px) {
+  .logo-container img {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+}
 @media (max-width: 480px) {
   .logo-container img {
     width: 100px;

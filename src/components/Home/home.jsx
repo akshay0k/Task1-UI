@@ -70,7 +70,7 @@ const Home = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-heading">
-        <h3 className="font-semibold text-[30px]">Choose a plan that's just right for you!</h3>
+        <h3 className="font-semibold text-[30px] ">Choose a plan that's just right for you!</h3>
         <div className="switch-box" onClick={handleSwitchToggle}>
           <span className={`month ${isMonthly ? "active" : ""}`}>Monthly</span>
           <span className={`annual ${!isMonthly ? "active" : ""}`}>
